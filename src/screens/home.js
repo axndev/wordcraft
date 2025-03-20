@@ -44,22 +44,22 @@ export default function Home(props) {
           onChange={(e) => setInput(e.target.value)}
         ></textarea>
       </div>
-      <button className={`btn btn-${props.mode =="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={lowerCase}>
+      <button className={`btn btn-${props.mode ==="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={lowerCase}>
         Lower Case
       </button>
-      <button className={`btn btn-${props.mode =="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={upperCase}>
+      <button className={`btn btn-${props.mode ==="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={upperCase}>
         Upper Case
       </button>
       <button
-        className={`btn btn-${props.mode =="dark"? "light":"dark"} start-0 mb-3 mx-2`}
+        className={`btn btn-${props.mode ==="dark"? "light":"dark"} start-0 mb-3 mx-2`}
         onClick={capitalizedCase}
       >
         Capitalized Case
       </button>
-      <button className={`btn btn-${props.mode =="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={copyText}>
+      <button className={`btn btn-${props.mode ==="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={copyText}>
           Copy
         </button>
-      <button className={`btn btn-${props.mode =="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={clearText}>
+      <button className={`btn btn-${props.mode ==="dark"? "light":"dark"} start-0 mb-3 mx-2`} onClick={clearText}>
           Clear
         </button>
       <p className="mt-3">Word Count: {wordCount}  |  Letter Count: {letterCount}  |  Sentence Count: {sentenceCount}</p>
